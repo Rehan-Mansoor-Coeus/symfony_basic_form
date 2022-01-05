@@ -1,0 +1,381 @@
+Script started on 2021-12-22 15:33:24+05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="203" LINES="53"]
+]0;coeus@C-299: /var/www/html/practice[01;32mcoeus@C-299[00m:[01;34m/var/www/html/practice[00m$ ls
+assets:install  cache:clear    composer.lock  docker-compose.override.yml  [0m[01;34mmigrations[0m        [01;34mpublic[0m  symfony.lock  [01;34mtests[0m         [34;42mvar[0m
+[01;34mbin[0m             composer.json  [01;34mconfig[0m         docker-compose.yml           phpunit.xml.dist  [01;34msrc[0m     [01;34mtemplates[0m     [01;34mtranslations[0m  [01;34mvendor[0m
+]0;coeus@C-299: /var/www/html/practice[01;32mcoeus@C-299[00m:[01;34m/var/www/html/practice[00m$ lscd html[2Pls -lsudo chmod 777 html[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@sudo [C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -l[Kcd htmlls[K[Kcomposer req makr[Ker
+Using version [32m^1.36[39m for [32msymfony/maker-bundle[39m
+[30;43msymfony/maker-bundle is currently present in the require-dev key and you ran the command without the --dev flag, which would move it to the require key.[39;49m
+[32mDo you want to move this requirement?[39m [[33mno[39m]? y
+[32m./composer.json has been updated[39m
+[32mRunning composer update symfony/maker-bundle[39m
+[32mLoading composer repositories with package information[39m
+[32mUpdating dependencies[39m
+Nothing to modify in lock file
+[32mWriting lock file[39m
+[32mInstalling dependencies from lock file (including require-dev)[39m
+Nothing to install, update or remove
+[32mGenerating optimized autoload files[39m
+[32mcomposer/package-versions-deprecated:[39m Generating version class...
+[32mcomposer/package-versions-deprecated:[39m ...done generating version class
+[32m110 packages you are using are looking for funding.[39m
+[32mUse the `composer fund` command to find out more![39m
+
+Run [33mcomposer recipes[39m at any time to see the status of your Symfony recipes.
+
+Executing script cache:clear [32m[OK][39m
+Executing script assets:install public [32m[OK][39m
+
+]0;coeus@C-299: /var/www/html/practice[01;32mcoeus@C-299[00m:[01;34m/var/www/html/practice[00m$ composer req twig
+Using version [32m^1.0[39m for [32msymfony/twig-pack[39m
+[32m./composer.json has been updated[39m
+[32mRunning composer update symfony/twig-pack[39m
+[32mLoading composer repositories with package information[39m
+[32mUpdating dependencies[39m
+[32mLock file operations: 1 install, 0 updates, 0 removals[39m
+  - Locking [32msymfony/twig-pack[39m ([33mv1.0.1[39m)
+[32mWriting lock file[39m
+[32mInstalling dependencies from lock file (including require-dev)[39m
+[32mPackage operations: 1 install, 0 updates, 0 removals[39m
+  - Installing [32msymfony/twig-pack[39m ([33mv1.0.1[39m): Extracting archive
+[32mGenerating optimized autoload files[39m
+[32mcomposer/package-versions-deprecated:[39m Generating version class...
+[32mcomposer/package-versions-deprecated:[39m ...done generating version class
+[32m111 packages you are using are looking for funding.[39m
+[32mUse the `composer fund` command to find out more![39m
+
+Run [33mcomposer recipes[39m at any time to see the status of your Symfony recipes.
+
+[32mUnpacking Symfony packs[39m
+  - Unpacked [32msymfony/twig-pack[39m
+[32mLoading composer repositories with package information[39m
+[32mUpdating dependencies[39m
+Nothing to modify in lock file
+[32mInstalling dependencies from lock file (including require-dev)[39m
+[32mPackage operations: 0 installs, 0 updates, 1 removal[39m
+  - Removing [32msymfony/twig-pack[39m ([33mv1.0.1[39m)
+[32mGenerating optimized autoload files[39m
+[32mcomposer/package-versions-deprecated:[39m Generating version class...
+[32mcomposer/package-versions-deprecated:[39m ...done generating version class
+[32m110 packages you are using are looking for funding.[39m
+[32mUse the `composer fund` command to find out more![39m
+
+Run [33mcomposer recipes[39m at any time to see the status of your Symfony recipes.
+
+Executing script cache:clear [32m[OK][39m
+Executing script assets:install public [32m[OK][39m
+
+
+]0;coeus@C-299: /var/www/html/practice[01;32mcoeus@C-299[00m:[01;34m/var/www/html/practice[00m$ composer req twig[K[K[K[Kform validation
+[32m./composer.json has been updated[39m
+[32mRunning composer update symfony/form symfony/validator[39m
+[32mLoading composer repositories with package information[39m
+[32mUpdating dependencies[39m
+Nothing to modify in lock file
+[32mInstalling dependencies from lock file (including require-dev)[39m
+Nothing to install, update or remove
+[32mGenerating optimized autoload files[39m
+[32mcomposer/package-versions-deprecated:[39m Generating version class...
+[32mcomposer/package-versions-deprecated:[39m ...done generating version class
+[32m110 packages you are using are looking for funding.[39m
+[32mUse the `composer fund` command to find out more![39m
+
+Run [33mcomposer recipes[39m at any time to see the status of your Symfony recipes.
+
+Executing script cache:clear [32m[OK][39m
+Executing script assets:install public [32m[OK][39m
+
+]0;coeus@C-299: /var/www/html/practice[01;32mcoeus@C-299[00m:[01;34m/var/www/html/practice[00m$ mysql --version
+mysql  Ver 8.0.27-0ubuntu0.20.04.1 for Linux on x86_64 ((Ubuntu))
+]0;coeus@C-299: /var/www/html/practice[01;32mcoeus@C-299[00m:[01;34m/var/www/html/practice[00m$ sudo mysql
+[sudo] password for coeus: 
+Sorry, try again.
+[sudo] password for coeus: 
+Sorry, try again.
+[sudo] password for coeus: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 8.0.27-0ubuntu0.20.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> clear
+mysql> exit
+Bye
+]0;coeus@C-299: /var/www/html/practice[01;32mcoeus@C-299[00m:[01;34m/var/www/html/practice[00m$ clear
+[H[2J[3J]0;coeus@C-299: /var/www/html/practice[01;32mcoeus@C-299[00m:[01;34m/var/www/html/practice[00m$ select users[K , authentication_strinf[Kh[Kg , plugin from mysql.i[Kuser'[K;
+bash: syntax error near unexpected token `,'
+]0;coeus@C-299: /var/www/html/practice[01;32mcoeus@C-299[00m:[01;34m/var/www/html/practice[00m$ select user , authentication_string , plugin from mysql.user;[1P[1@~[1@~[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+bash: syntax error near unexpected token `authentication_string,'
+]0;coeus@C-299: /var/www/html/practice[01;32mcoeus@C-299[00m:[01;34m/var/www/html/practice[00m$ select user, authentication_string, plugin from mysql.user;DDDDDDDD[K[K[K[K[K[K[K[K[K;D[K^C
+]0;coeus@C-299: /var/www/html/practice[01;32mcoeus@C-299[00m:[01;34m/var/www/html/practice[00m$ ^C
+]0;coeus@C-299: /var/www/html/practice[01;32mcoeus@C-299[00m:[01;34m/var/www/html/practice[00m$ sudo mysql
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 8.0.27-0ubuntu0.20.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> select user, authentication_string, plugin from mysql.user;
++------------------+------------------------------------------------------------------------+-----------------------+
+| user             | authentication_string                                                  | plugin                |
++------------------+------------------------------------------------------------------------+-----------------------+
+| debian-sys-maint | $A$005$"1N|^AF_{|k;w/rlZAdKvSLu5JT12u2F4DZPzWhyNzfZrOG9wEVPSx5 | caching_sha2_password |
+| mysql.infoschema | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password |
+| mysql.session    | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password |
+| mysql.sys        | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password |
+| root             |                                                                        | auth_socket           |
++------------------+------------------------------------------------------------------------+-----------------------+
+5 rows in set (0.01 sec)
+
+mysql> show f[13G[KDATA[16G[K[15G[K[14G[K[13G[Kdatabase;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database' at line 1
+mysql> [8Gshow database;[21G[Ks;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.01 sec)
+
+mysql> ALETE[12G[K[11G[K[10G[KTER ''[15GR'[16GP'[17GO'[17G'[K[16G'[K[16GO'[16G'[K[15G'[K[15Gr'[16Go'[17Go'[18Gt''@''[22Gl'[23Go'[24Gc'[25Ga'[26Gl'[27Gh'[28Go'[29Gs'[30Gt'' Id[34G[KDENTIDIED WITH mysql_natic[59G[Kv_[60G[Ke_password bt ''[75Gr'[76Go'[77Go'[78Gt'';bt[72G[P [72G[1@y 
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''root'@'localhost' IDENTIDIED WITH mysql_native_password by 'root'' at line 1
+mysql> [8Gshow databases;[21G;[K[9Gelect user, authentication_string, plugin from mysql.user;[8Gexit[K[8Gselect user, authentication_string, plugin from mysql.user;[9Ghow database;[K[21Gs;[21G;[K[9Gelect user, authentication_string, plugin from mysql.user;[8Gexit[K[8Gclear[13G[13G[13G[13G[12G[K[11G[K[10G[K[9G[K[8G[KALTER 'root'@'localhost' IDENTIDIED WITH mysql_native_password by 'root';[39G[PI[39G[1@FI
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''root'@'localhost' IDENTIFIED WITH mysql_native_password by 'root'' at line 1
+mysql> [8Gshow databases;[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[11G[K[10G[K[9G[K[8G[KALTER 'root'@'localhost' IDENTIDIED WITH mysql_native_password by 'root';D[39G[PI[39G[1@FIIED WITH[48G[1@C [49G[1@C [50G[1@C [51G[1@C [51G[P [50G[P [49G[P [48G[P  mysql_native_password[69G[P [68G[P [67G[P [66G[P [65G[P [64G[P [63G[P [62G[P [61G[P [60G[P [59G[P [58G[P [57G[P [56G[P [55G[P [54G[P [53G[P [52G[P [51G[P [50G[P [49G[P [49G[1@c [50G[1@a [51G[1@c [52G[1@h [53G[1@i [54G[1@n [55G[1@g [56G[1@_ [57G[1@s [58G[1@h [59G[1@a [60G[1@2 [61G[1@_ [62G[1@p [63G[1@a [64G[1@s [65G[1@s [66G[1@w [67G[1@p [67G[P [67G[1@o [68G[1@r [69G[1@d 
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''root'@'localhost' IDENTIFIED WITH caching_sha2_password by 'root'' at line 1
+mysql> ALTER 'root'@'localhost' IDENTIDIED WITH mysql_native_password by 'root';[14G[1@ '[14G[1@U [15G[1@S [16G[1@E [17G[1@R [19G[1@ '[19G[P' 'root'@'localhost' IDENTID[44G[PI[44G[1@fI[44G[PI[44G[1@FI
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> [8Gshow databases;[21G;[K[21Gs;[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[11G[K[10G[K[9G[K[8G[KALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'root';[74G[P [73G[P [72G[P [71G[P [70G[P [69G[P [68G[P [67G[P [66G[P [65G[P [64G[P [63G[P [62G[P [61G[P [60G[P [59G[P [58G[P [57G[P [56G[P [55G[P [54G[P [55G[1@ b[55G[Pb[54G[1@C [55G[1@A [56G[1@C [57G[1@H [57G[P [56G[P [55G[P [54G[P [54G[1@c [55G[1@h [56G[1@a [56G[P [55G[P [55G[1@a [56G[1@c [57G[1@j [57G[P [57G[1@g [57G[P [57G[1@h [58G[1@i [59G[1@n [60G[1@g [61G[1@_ [62G[1@s [63G[1@h [64G[1@a [65G[1@2 [66G[1@_ [67G[1@p [68G[1@a [69G[1@s [70G[1@s [71G[1@w [72G[1@o [73G[1@r [74G[1@d 
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> exit
+Bye
+]0;coeus@C-299: /var/www/html/practice[01;32mcoeus@C-299[00m:[01;34m/var/www/html/practice[00m$ sudo mysql_secure_installation
+[sudo] password for coeus: 
+
+Securing the MySQL server deployment.
+
+Connecting to MySQL using a blank password.
+The 'validate_password' component is installed on the server.
+The subsequent steps will run with the existing configuration
+of the component.
+Please set the password for root here.
+
+New password: 
+
+Re-enter new password: 
+
+Estimated strength of the password: 0 
+Do you wish to continue with the password provided?(Press y|Y for Yes, any other key for No) : y n
+
+New password: 
+
+Re-enter new password: 
+
+Estimated strength of the password: 0 
+Do you wish to continue with the password provided?(Press y|Y for Yes, any other key for No) : y
+By default, a MySQL installation has an anonymous user,
+allowing anyone to log into MySQL without having to have
+a user account created for them. This is intended only for
+testing, and to make the installation go a bit smoother.
+You should remove them before moving into a production
+environment.
+
+Remove anonymous users? (Press y|Y for Yes, any other key for No) : y
+Success.
+
+
+Normally, root should only be allowed to connect from
+'localhost'. This ensures that someone cannot guess at
+the root password from the network.
+
+Disallow root login remotely? (Press y|Y for Yes, any other key for No) : y
+Success.
+
+By default, MySQL comes with a database named 'test' that
+anyone can access. This is also intended only for testing,
+and should be removed before moving into a production
+environment.
+
+
+Remove test database and access to it? (Press y|Y for Yes, any other key for No) : y
+ - Dropping test database...
+Success.
+
+ - Removing privileges on test database...
+Success.
+
+Reloading the privilege tables will ensure that all changes
+made so far will take effect immediately.
+
+Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y
+Success.
+
+All done! 
+]0;coeus@C-299: /var/www/html/practice[01;32mcoeus@C-299[00m:[01;34m/var/www/html/practice[00m$ myd[Ksql
+ERROR 1045 (28000): Access denied for user 'coeus'@'localhost' (using password: NO)
+]0;coeus@C-299: /var/www/html/practice[01;32mcoeus@C-299[00m:[01;34m/var/www/html/practice[00m$ sudo mysql
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 16
+Server version: 8.0.27-0ubuntu0.20.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> [8Gexit[8Gshow databases;[21G;[K[9Gelect user, authentication_string, plugin from mysql.user;[8Gexit[K[8Gselect user, authentication_string, plugin from mysql.user;[9Ghow database;[K
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'database' at line 1
+mysql> [8Gshow database;[8Gexit[K[8Gshow databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.00 sec)
+
+mysql> [8Gshow databases;[21G;[K[8Gexit[K[8Gshow databases;[21G;[K[9Gelect user, authentication_string, plugin from mysql.user;[8Gexit[K[8Gselect user, authentication_string, plugin from mysql.user;
++------------------+------------------------------------------------------------------------+-----------------------+
+| user             | authentication_string                                                  | plugin                |
++------------------+------------------------------------------------------------------------+-----------------------+
+| debian-sys-maint | $A$005$"1N|^AF_{|k;w/rlZAdKvSLu5JT12u2F4DZPzWhyNzfZrOG9wEVPSx5 | caching_sha2_password |
+| mysql.infoschema | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password |
+| mysql.session    | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password |
+| mysql.sys        | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password |
+| root             |                                                                        | auth_socket           |
++------------------+------------------------------------------------------------------------+-----------------------+
+5 rows in set (0.00 sec)
+
+mysql> sudo mysql_secure_installation[37G[K[36G[K[35G[K[34G[K[33G[K[32G[K[31G[K[30G[K[29G[K[28G[K[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[11G[K[10G[K[9G[K[8G[KALTER USER ''[20Gr'[21Go'[22Go'[23Gt''@''[27Gl'[28Go'[29Gc'[30Ga'[31Gl'[32Gh'[33Go'[34Gs'[35Gt'' IDENTIFIED WITH mysql_natic[64G[Kve_password by ''[80Gr'[81Go'[82Go'[83Gt'';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql>     UPDATE
+    ->       mysql.user
+    ->     SET
+    ->       Password = PASSWORD('YOURNEWPASSWORD')
+    ->     WHERE
+    ->       User = 'root';[12GWHERE[K[12GSET[K[12GWHERE[16G[K[15G[K[14G[K[13G[K[12G[Kuser = ''[20Gr'[21Gp'[22Go'[22G'[K[21G'[K[21Go'[22Go'[23Gr'[23G'[K[23Gt'';[12GSET[K[12G  mysql.user[12GSET[K[12GWHERE[12G  User = 'root';[27G[K;[27G[K[26G[K[25G[K[24G[K[23G[K[22G[K[21G[K[20G[19G[K[18G[17G[K[16G[K[15G[K[14G[K[13G[12G[11G[10G[9G[8GA[8G    WHERE[16G[K[15G[K[14G[K[13G[K[12G[K[11G[10G[9G[8G^C^C
+
+^C
+mysql>     UPDATE
+    ->       mysql.user
+    ->     SET
+    ->       Password = PASSWORD('Rehan1234')
+    ->     WHERE
+    ->       User = 'root';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '('Rehan1234')
+    WHERE
+      User = 'root'' at line 4
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'YOURNEWPASSWORD';[67G';[K[66G';[K[65G';[K[64G';[K[63G';[K[62G';[K[61G';[K[60G';[K[59G';[K[58G';[K[57G';[K[56G';[K[55G';[K[54G';[K[53G';[K[53GR';[54Ge';[55Gh';[56Ga';[57Gn';[58G1';[59G2';[60G3';[61G4';[61G';[K[60G';[K[59G';[K[58G';[K[57G';[K[56G';[K[55G';[K[54G';[K[53G';[K[53GC';[54Go';[55Ge';[56Gu';[57Gs';[58G1';[59G2';[60G3';
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> [14GUser = 'root';[12GWHERE[K[12GSET[K[12G  mysql.user[12GUPDATE[K[12GWHERE[K[12GSET[K[12G  mysql.user[12GUPDATE[K[8Gselect user, authentication_string, plugin from mysql.user;[9Ghow databases;[K[21G;[K[21Gs;[9Gelect user, authentication_string, plugin from mysql.user;
++------------------+------------------------------------------------------------------------+-----------------------+
+| user             | authentication_string                                                  | plugin                |
++------------------+------------------------------------------------------------------------+-----------------------+
+| debian-sys-maint | $A$005$"1N|^AF_{|k;w/rlZAdKvSLu5JT12u2F4DZPzWhyNzfZrOG9wEVPSx5 | caching_sha2_password |
+| mysql.infoschema | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password |
+| mysql.session    | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password |
+| mysql.sys        | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password |
+| root             |                                                                        | auth_socket           |
++------------------+------------------------------------------------------------------------+-----------------------+
+5 rows in set (0.00 sec)
+
+mysql> [8Gselect user, authentication_string, plugin from mysql.user;[8G      User = 'root';[K[8Gselect user, authentication_string, plugin from mysql.user;[8G[K[8G[8Gselect user, authentication_string, plugin from mysql.user;[8G      User = 'root';[K[12GWHERE[K[12GSET[K[12G  mysql.user[12GUPDATE[K[12GWHERE[K[12GSET[K[12G  mysql.user[12GUPDATE[K[8Gselect user, authentication_string, plugin from mysql.user;[9Ghow databases;[K[21G;[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[11G[K[10G[K[9G[K[8G[KALTER USER 'root'@'localhost' IDENTIFIED BY 'YOURNEWPASSWORD';[69G[K[68G[K[67G[K[66G[K[65G[K[64G[K[63G[K[62G[K[61G[K[60G[K[59G[K[58G[K[57G[K[56G[K[55G[K[54G[K[53G[K[52G[K[51G[50G[K[49G[KWITH mysql_native_o[67G[Kpassword bt [78G[77G[Ky ''[80Gr'[81Go'[82Go'[83Gt'';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> show databases;
+show databases;
+^C
+mysql> [8Gselect user, authentication_string, plugin from mysql.user;
++------------------+------------------------------------------------------------------------+-----------------------+
+| user             | authentication_string                                                  | plugin                |
++------------------+------------------------------------------------------------------------+-----------------------+
+| debian-sys-maint | $A$005$"1N|^AF_{|k;w/rlZAdKvSLu5JT12u2F4DZPzWhyNzfZrOG9wEVPSx5 | caching_sha2_password |
+| mysql.infoschema | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password |
+| mysql.session    | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password |
+| mysql.sys        | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password |
+| root             |                                                                        | auth_socket           |
++------------------+------------------------------------------------------------------------+-----------------------+
+5 rows in set (0.00 sec)
+
+mysql> show datat[17G[Kbases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+4 rows in set (0.00 sec)
+
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> SHOW VARIABLES LIKE 'validate_password%';
++--------------------------------------+--------+
+| Variable_name                        | Value  |
++--------------------------------------+--------+
+| validate_password.check_user_name    | ON     |
+| validate_password.dictionary_file    |        |
+| validate_password.length             | 8      |
+| validate_password.mixed_case_count   | 1      |
+| validate_password.number_count       | 1      |
+| validate_password.policy             | MEDIUM |
+| validate_password.special_char_count | 1      |
++--------------------------------------+--------+
+7 rows in set (0.02 sec)
+
+mysql> SET GLOBAL validate_password.length = 6;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SET GLOBAL validate_password.number_count = 0;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> [8Gshow databases;[9Gelect user, authentication_string, plugin from mysql.user;
++------------------+------------------------------------------------------------------------+-----------------------+
+| user             | authentication_string                                                  | plugin                |
++------------------+------------------------------------------------------------------------+-----------------------+
+| debian-sys-maint | $A$005$"1N|^AF_{|k;w/rlZAdKvSLu5JT12u2F4DZPzWhyNzfZrOG9wEVPSx5 | caching_sha2_password |
+| mysql.infoschema | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password |
+| mysql.session    | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password |
+| mysql.sys        | $A$005$THISISACOMBINATIONOFINVALIDSALTANDPASSWORDTHATMUSTNEVERBRBEUSED | caching_sha2_password |
+| root             |                                                                        | auth_socket           |
++------------------+------------------------------------------------------------------------+-----------------------+
+5 rows in set (0.00 sec)
+
+mysql> ^C^Ccles
+cles
+^C
+mysql> '[8G[KALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
+ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
+mysql> [8Gselect user, authentication_string, plugin from mysql.user;[9Ghow databases;[K[9Gelect user, authentication_string, plugin from mysql.user;[9Ghow databases;[K[9Gelect user, authentication_string, plugin from mysql.user;[8G[K[8Gselect user, authentication_string, plugin from mysql.user;[9Ghow databases;[K[9Gelect user, authentication_string, plugin from mysql.user;[8G      User = 'root';[K[12GWHERE[K[12GSET[K[12GWHERE[12G  User = 'root';[8Gselect user, authentication_string, plugin from mysql.user;[9Ghow databases;[K[9Gelect user, authentication_string, plugin from mysql.user;[8G[K[8G[8G[8G[8G SET GLOBAL validate_password.length = 4;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SET GLOBAL validate_password.policy=LOW;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> [8Gselect user, authentication_string, plugin from mysql.user;[9Ghow databases;[K[9Gelect user, authentication_string, plugin from mysql.user;[8G[K[8G[8Gselect user, authentication_string, plugin from mysql.user;[9Ghow databases;[K[9Gelect user, authentication_string, plugin from mysql.user;[8G      User = 'root';[K[8Gselect user, authentication_string, plugin from mysql.user;[9Ghow databases;[K[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[K[13G[K[12G[11G[K[10G[K[9G[K[8G[KSHOW VARIABLES LIKE 'validate_password%';
++--------------------------------------+-------+
+| Variable_name                        | Value |
++--------------------------------------+-------+
+| validate_password.check_user_name    | ON    |
+| validate_password.dictionary_file    |      
