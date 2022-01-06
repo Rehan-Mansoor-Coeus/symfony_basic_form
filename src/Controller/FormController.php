@@ -6,6 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Services\Fetcher;
+use Psr\Log\LoggerInterface;
 
 use App\Entity\Post;
 use App\Form\PostType;
@@ -24,9 +26,9 @@ class FormController extends AbstractController
 
         $form->handleRequest($request);
         if($form->isSubmitted()){
-          $em = $this->getDoctrine()->getManager();
-          $em->persist($post);
-          $em->flush();
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($post);
+            $em->flush();
         }
 
         return $this->render('form/index.html.twig', [
@@ -61,17 +63,19 @@ class FormController extends AbstractController
     /**
      * @Route("/retrive", name="retrive")
      */
-    public function retrive(Request $request)
+    public function retrive(Fetcher $fetcher)
     {
         $em = $this->getDoctrine()->getManager();
         $retrive = $em->getRepository(Post::class)->findAll();
-
+        $fetcher = $fetcher->get('https://api.publicapis.org/entries');
+//        dd($fetcher['entries'][0]);
         return $this->render('form/data.html.twig', [
-            'data' => $retrive
+            'data' => $retrive,
+            'fetcher' => $fetcher['entries']
         ]);
     }
 
-     /**
+    /**
      * @Route("/update/{id}", name="update")
      */
     public function update($id)
@@ -97,4 +101,5 @@ class FormController extends AbstractController
         $this->addFlash('success', 'Data has been Removed!');
         return $this->redirect('/retrive');
     }
+
 }
