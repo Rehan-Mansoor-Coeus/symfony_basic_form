@@ -70,4 +70,28 @@ class FormController extends AbstractController
             'data' => $retrive
         ]);
     }
+
+     /**
+     * @Route("/update/{id}", name="update")
+     */
+    public function update($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $data = $em->getRepository(Post::class)->find($id);
+        $data->setTitle('title updated');
+        $em->flush();
+        dd('data updated');
+    }
+
+    /**
+     * @Route("/remove/{id}", name="remove")
+     */
+    public function remove($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $data = $em->getRepository(Post::class)->find($id);
+        $em->remove($data);
+        $em->flush();
+        dd('data deleted');
+    }
 }
