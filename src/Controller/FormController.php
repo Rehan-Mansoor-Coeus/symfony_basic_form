@@ -80,7 +80,8 @@ class FormController extends AbstractController
         $data = $em->getRepository(Post::class)->find($id);
         $data->setTitle('title updated');
         $em->flush();
-        dd('data updated');
+        $this->addFlash('success', 'Data has been Updated!');
+        return $this->redirect('/retrive');
     }
 
     /**
@@ -92,6 +93,8 @@ class FormController extends AbstractController
         $data = $em->getRepository(Post::class)->find($id);
         $em->remove($data);
         $em->flush();
-        dd('data deleted');
+
+        $this->addFlash('success', 'Data has been Removed!');
+        return $this->redirect('/retrive');
     }
 }
